@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FORMULARIO</title>
+
+  <link rel="icon" type="image/png" href="imagenes/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body> 
+
+	<div class="container">
+
+		<div class="fondo" id="fondo">			
+		
+  	        <h2>Estudio de música online</h2>
+
+            <p class="intro">¡¡ Rellena este formulario y regístrate con nosotros !!</p>                      
+
+            <form action="" method="POST" id="formulario">
+
+                <div class="row">
+
+                  <div class="col-md-12 col-md-offset-13">   
+
+                        <div class="row">
+
+                            <div class="col-sm-6 form-group">
+                            	<label for="usuario">Usuario:</label>
+          					        	<input type="text" id="usuario" class="form-control campo" name="usuario">
+          					        	<span id="campo_error_usuario" class="texto_campo_error"></span>                           
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="password">Password:</label>
+                    						<input id="password" class="form-control campo" name="password" type="password" placeholder="Introduce la contraseña" pattern="[A-Za-z0-9]{5,40}"
+                     						title="Letras y números. Entre 5 y  7 dígitos">
+                     						<span id="campo_error_password" class="texto_campo_error"></span>
+                            </div>
+
+                          
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6 form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control campo" id="nombre" name="nombre">
+                                <span id="campo_error_nombre" class="texto_campo_error"></span>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="email">Email:</label>
+
+                                <input type="text" class="form-control campo" id="email" name="email">
+                                <span id="campo_error_email" class="texto_campo_error"></span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row">
+
+                           <div class="col-sm-6 form-group">
+                                <label for="direccion">Direccion:</label>
+                                <input type="text" class="form-control campo" id="direccion" name="direccion" title="">
+                            </div>
+
+                            
+                            <div class="col-sm-6 form-group">
+
+                                <label for="cp">CP:</label>
+                                <input type="text" class="form-control campo" id="cp" name="cp">
+                                <span id="campo_error_cp" class="texto_campo_error"></span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                          <div class="col-sm-6 form-group">
+
+                                <label for="selector">País:</label>
+                                  <select id="selector" class="form-control" name="selector">
+                                    <option value="0">Elige una opcion</option>
+                                    <option value="1">España</option>
+                                    <option value="2">Inglaterra</option>
+                                    <option value="3">Portugal</option>
+                                  </select>
+                                <span id="campo_error_pais" class="texto_campo_error"></span>
+
+                            </div>
+                            
+
+                            <div class="col-sm-6 form-group">
+                                <label for="direccion">Otros:</label>
+                                <input type="text" class="form-control campo" id="direccion222" name="direccion" title="">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-6 form-group" id="sexo">
+                                <label for="radioButton">Sexo:</label><br>
+                                <input type="radio" id="radioButton1" name="radioButton1"> Hombre<br>
+                                <input type="radio" id="radioButton1" name="radioButton1"> Mujer<br>
+                                <span id="campo_error_sexo" class="texto_campo_error"></span>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="checkBox">Idioma:</label><br>
+                                <input id="checkBox1" name="checkBox" type="checkbox"> Inglés<br>
+                                <input id="checkBox2" name="checkBox2" type="checkbox"> Francés<br>
+                                <span id="campo_error_idioma" class="texto_campo_error"></span>
+        
+                              
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12 form-group">
+
+                                <label for="name">Mensaje:</label>
+                                <textarea class="form-control" type="text" id="mensaje" name="message" placeholder="Escribe tu mensaje" rows="2"></textarea>
+
+                                <!-- CONTADOR DEL TEXT AREA -->
+                                <div class="contador">
+                                <span id="digitosIntroducidos" name="digitosIntroducidos">0</span>/<span id="contadorTotal" name="contadorTotal">240</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    
+                  </div>
+                  
+                </div>
+
+                <!-- Boton enviar -->
+
+                <div class="row">
+
+                    <div class="col-sm-12 form-group">
+                     
+                        <button type="submit" class="btn btn-lg btn-success btn-block" name="submit" value="Enviar" id="btnEnviar">ENVIAR</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+  
+    </div>
+  </div>
+
+
+</body>
+</html>
